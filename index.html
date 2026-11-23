@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>whiny.baby — Free 3 AM Baby White Noise, Shusher &amp; Fussy Baby Checklist</title>
+  <meta
+    name="description"
+    content="Instant, ad-free 3 AM baby white noise, womb brown noise, rain, fan, and rhythmic shusher right in your browser—plus a 5 S's fussy baby soothing checklist."
+  />
+  <meta name="theme-color" content="#F5F6FA" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://whiny.baby/" />
+  <meta property="og:title" content="whiny.baby — Free 3 AM Baby White Noise &amp; Shusher" />
+  <meta
+    property="og:description"
+    content="One-tap womb brown noise, rain, fan, and rhythmic shushing right in your browser—plus the 5 S's fussy baby checklist."
+  />
+  <link rel="canonical" href="https://whiny.baby/" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%234A5D82'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='34'%3E%F0%9F%8C%99%3C/text%3E%3C/svg%3E"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does white noise or brown noise calm a crying baby?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inside the womb, babies hear a constant low-frequency whooshing sound from blood flow and heartbeat. Warm brown noise, soft fan noise, and rhythmic shushing mimic that familiar soundscape and trigger the infant calming reflex."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How loud should white noise be for a baby?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pediatricians recommend keeping sound machines at least 7 feet (about 2 meters) away from your baby's crib and no louder than 50 decibels—roughly the volume of a soft shower or quiet conversation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the 5 S's for soothing a fussy baby?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 5 S's—popularized by pediatrician Dr. Harvey Karp—are Swaddle, Side or Stomach position (while awake and held in your arms, never for sleep), Shush, Swing (gentle rhythmic jiggle), and Suck (pacifier or feeding)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the baby witching hour?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many newborns experience a predictable stretch of fussiness in the late afternoon or early evening (often between 5 PM and 10 PM) peaking around 6–8 weeks of age, usually driven by overtiredness, overstimulation, and cluster feeding."
+          }
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#soundboard">Skip to White Noise Player</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="whiny.baby home">
+        <span class="brand-badge" aria-hidden="true">🌙</span>
+        <span class="brand-name">whiny<span class="brand-dot">.baby</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#soundboard">White Noise</a>
+        <a href="#checklist">5 S's Checklist</a>
+        <a href="#kit">Soothing Kit</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <button
+        id="nightModeToggle"
+        class="night-toggle"
+        type="button"
+        aria-pressed="false"
+        title="Switch to dim, low-blue-light 3 AM Nursery Mode"
+      >
+        <span class="night-icon" aria-hidden="true">🌙</span>
+        <span class="night-label">3 AM Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Instant calm &middot; Zero ads &middot; Works in your browser</p>
+        <h1>Baby won't stop crying?<br />Press play.</h1>
+        <p class="hero-sub">
+          No 30-second YouTube pre-roll ads waking the baby back up. Pure, continuous womb noise,
+          rain, nursery fan, and rhythmic shushing—plus a 1-minute fussiness checklist.
+        </p>
+        <div class="hero-actions">
+          <a href="#soundboard" class="btn btn-primary">Open Sound Machine</a>
+          <a href="#checklist" class="btn btn-secondary">Try the 5 S's Checklist</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: In-Browser Sound Machine -->
+    <section id="soundboard" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>3 AM Browser Sound Machine</h2>
+          <p>Tap a soundscape, set a gentle fade-out timer, and place your phone at least 7 ft from the crib.</p>
+        </div>
+
+        <div class="player-shell">
+          <div class="sound-grid" role="radiogroup" aria-label="Choose soothing sound">
+            <button type="button" class="sound-card is-active" data-sound="brown" aria-pressed="true">
+              <span class="sound-emoji" aria-hidden="true">🌊</span>
+              <strong>Womb Brown Noise</strong>
+              <small>Deep, warm rumble</small>
+            </button>
+            <button type="button" class="sound-card" data-sound="shush" aria-pressed="false">
+              <span class="sound-emoji" aria-hidden="true">🤫</span>
+              <strong>Rhythmic Shusher</strong>
+              <small>Gentle steady "shhh"</small>
+            </button>
+            <button type="button" class="sound-card" data-sound="rain" aria-pressed="false">
+              <span class="sound-emoji" aria-hidden="true">🌧️</span>
+              <strong>Soft Rain (Pink)</strong>
+              <small>Balanced, gentle hiss</small>
+            </button>
+            <button type="button" class="sound-card" data-sound="fan" aria-pressed="false">
+              <span class="sound-emoji" aria-hidden="true">🌀</span>
+              <strong>Nursery Box Fan</strong>
+              <small>Steady airy hum</small>
+            </button>
+          </div>
+
+          <div class="player-controls">
+            <button id="playToggle" type="button" class="play-btn" aria-pressed="false">
+              <span id="playIcon" aria-hidden="true">▶</span>
+              <span id="playLabel">Play Womb Brown Noise</span>
+            </button>
+
+            <div class="control-row">
+              <div class="volume-control">
+                <label for="volumeSlider">
+                  Volume <span id="volumeValue">55%</span>
+                </label>
+                <input id="volumeSlider" type="range" min="5" max="100" value="55" step="1" />
+              </div>
+
+              <div class="timer-control">
+                <span class="timer-label">Sleep Timer <strong id="timerCountdown">Continuous</strong></span>
+                <div class="timer-pills" role="group" aria-label="Sleep timer duration">
+                  <button type="button" class="timer-pill" data-minutes="15">15m</button>
+                  <button type="button" class="timer-pill" data-minutes="30">30m</button>
+                  <button type="button" class="timer-pill" data-minutes="60">60m</button>
+                  <button type="button" class="timer-pill is-active" data-minutes="0">∞</button>
+                </div>
+              </div>
+            </div>
+
+            <p class="safety-note">
+              <strong>Safe volume tip:</strong> Per pediatric guidance, keep sound machines at least
+              <strong>7 feet from the crib</strong> at a gentle volume (~50 dB, like a soft shower).
+              Remember to flip your phone's silent switch off if you hear no audio on iOS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Interactive 5 S's & Witching-Hour Triage -->
+    <section id="checklist" class="section section-tinted">
+      <div class="container">
+        <div class="section-head">
+          <h2>The 60-Second Fussy Baby Checklist</h2>
+          <p>Exhausted brains forget the basics. Tap through these quick checks one by one.</p>
+        </div>
+
+        <div class="checklist-layout">
+          <div class="check-card">
+            <div class="check-card-head">
+              <h3>Step 1: Quick Basics</h3>
+              <span id="basicsCount" class="progress-badge">0 / 4 checked</span>
+            </div>
+            <div class="check-list" id="basicsList">
+              <label class="check-item">
+                <input type="checkbox" data-group="basics" />
+                <span><strong>Diaper &amp; Hair Tourniquet:</strong> Fresh diaper? Quick peek at fingers &amp; toes for a wrapped strand of hair.</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" data-group="basics" />
+                <span><strong>Hungry or Cluster Feeding:</strong> Even if they ate 40 minutes ago, evening cluster feeds are very real.</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" data-group="basics" />
+                <span><strong>Trapped Gas / Burp:</strong> Try upright shoulder pats, bicycle legs, or gentle clockwise tummy rubs.</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" data-group="basics" />
+                <span><strong>Temperature Check:</strong> Feel the back of baby's neck (not hands/feet)—warm &amp; dry, not sweaty or cold.</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="check-card">
+            <div class="check-card-head">
+              <h3>Step 2: The 5 S's Soothing Reset</h3>
+              <span id="fivesCount" class="progress-badge">0 / 5 checked</span>
+            </div>
+            <div class="check-list" id="fivesList">
+              <label class="check-item">
+                <input type="checkbox" data-group="fives" />
+                <span><strong>1. Swaddle:</strong> Snug arms-in (or arms-up) wrap to calm the startle reflex. <em>Stop swaddling once baby shows signs of rolling.</em></span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" data-group="fives" />
+                <span><strong>2. Side / Stomach Hold:</strong> Hold baby on their side or across your forearm while awake &amp; supervised. <em>Always place flat on their back for sleep.</em></span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" data-group="fives" />
+                <span><strong>3. Shush:</strong> Turn on the <strong>Womb Noise</strong> or <strong>Rhythmic Shusher</strong> above to match their crying volume briefly, then lower it.</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" data-group="fives" />
+                <span><strong>4. Swing:</strong> Support head/neck and do tiny, rhythmic bounces on a yoga ball or gentle sway (never shake).</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" data-group="fives" />
+                <span><strong>5. Suck:</strong> Offer a pacifier, clean finger, or breast/bottle once calm enough to latch.</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="breathe-banner" role="note">
+          <strong>Parent sanity reminder:</strong> If you've checked everything and feel overwhelmed, it is
+          100% okay to place baby safely on their back in an empty crib, step into the hallway, and
+          take 5 minutes to breathe. If your baby has a fever (100.4&deg;F+ under 3 months), trouble
+          breathing, or inconsolable crying that feels different than usual, call your pediatrician.
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Fussy Baby Survival Kit -->
+    <section id="kit" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Parent-Tested Soothing &amp; Sleep Kit</h2>
+          <p>When your phone battery is at 4% and your arms feel like jelly, these are the sleep and gas-relief tools parents actually swear by.</p>
+        </div>
+
+        <p class="affiliate-disclosure">
+          <strong>Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.
+          Clicking these links helps keep <code>whiny.baby</code> ad-free at zero extra cost to you.
+        </p>
+
+        <div id="kitGrid" class="kit-grid"></div>
+      </div>
+    </section>
+
+    <!-- Section 4: FAQ -->
+    <section id="faq" class="section section-tinted">
+      <div class="container faq-container">
+        <div class="section-head">
+          <h2>Frequently Asked 3 AM Sleep Questions</h2>
+          <p>Quick reassurance for overtired nights.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Why is my baby suddenly inconsolable every evening?</summary>
+            <p>
+              That's the classic "witching hour" (usually 5 PM–10 PM, peaking around weeks 6–8).
+              Newborn nervous systems get overstimulated by the end of the day. Dim the lights,
+              turn on steady brown noise, try a warm bath or stepping outside into cool fresh air
+              for 2 minutes—the sudden change in scenery often hits a gentle reset button.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is brown noise better than white noise for babies?</summary>
+            <p>
+              Many parents and babies prefer <strong>brown noise</strong> or <strong>pink noise</strong>
+              over harsh static white noise because they emphasize deeper, lower frequencies—much
+              closer to the muffled soundscape inside the womb and far more pleasant for parents
+              sleeping in the same room.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>When should I stop swaddling my baby?</summary>
+            <p>
+              Stop swaddling as soon as your baby shows any early signs of trying to roll over
+              (often around 8–12 weeks). Transition to a sleeveless sleep sack so their arms are
+              free for safe sleep.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What are red flags that crying isn't just normal fussiness?</summary>
+            <p>
+              Call your pediatrician promptly if crying comes with a fever (especially 100.4&deg;F /
+              38&deg;C or higher in a baby under 3 months), vomiting, fewer wet diapers than usual,
+              rash, limpness, or high-pitched/painful crying that doesn't resemble their normal cry.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>whiny.baby</strong>
+        <p>Ad-free 3 AM white noise &amp; soothing toolkit for tired parents.</p>
+        <p class="sibling-links">
+          3 AM Parent Toolkit:
+          <a href="https://poopy.baby/">poopy.baby</a> &middot;
+          <a href="https://whiny.baby/">whiny.baby</a> &middot;
+          <a href="https://chunky.baby/">chunky.baby</a>
+        </p>
+      </div>
+      <div class="footer-legal">
+        <p>
+          <strong>Amazon Associate Disclosure:</strong> As an Amazon Associate I earn from
+          qualifying purchases.
+        </p>
+        <p>
+          <strong>Medical &amp; Safety Disclaimer:</strong> Informational parenting guide only—not
+          medical advice. Always follow safe sleep practices (alone, on their back, in a clear crib).
+        </p>
+        <p class="footer-meta">
+          No cookies &middot; No tracking scripts &middot; &copy; <span id="yearSpan"></span> whiny.baby
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
