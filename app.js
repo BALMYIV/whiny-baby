@@ -388,7 +388,7 @@
             class="btn btn-primary"
             href="${withAmazonTag(item.url)}"
             target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
+            rel="nofollow sponsored noopener"
           >
             ${item.cta} &rarr;
           </a>
